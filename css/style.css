@@ -1,0 +1,547 @@
+@import url('../css/fonts.css');
+
+:root {
+
+    /**   Font Families Theme   **/
+
+    --Rubik: "Rubik", cursive;
+    --Acme: "Acme", cursive;
+    --Lobster: "Lobster", cursive;
+    --Sniglet: "Sniglet", cursive;
+    --Patua: "Patua One", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-family: var(--Acme);
+    letter-spacing: .2rem;
+    padding-bottom: 1rem;
+}
+
+.section-title span {
+    color: #000080
+}
+
+.header {
+    padding-bottom: 5rem;
+}
+
+.header .navbar {
+    width: 100%;
+    z-index: 1000;
+    transition: .5s ease;
+    transition-property: position, background-color;
+    /*
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: whitesmoke;
+ */
+}
+
+.header .navbar-brand {
+    font-size: 1.4rem;
+    color: navy;
+    margin-left: 7rem;
+    font-family: var(--Patua);
+}
+
+.header .navbar .navbar-nav {
+    padding-right: 7rem;
+    font-family: var(--Acme);
+}
+
+.header .navbar .navbar-nav .nav-item {
+    padding: 0 1.5rem;
+    padding-top: .5rem;
+}
+
+.header .hero {
+    position: relative;
+    /* top: 11.342vh; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.header .carousel img {
+    width: 100%;
+    height: 90vh;
+}
+
+.header .hero .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+    bottom: 10vmin;
+}
+
+.header .hero h1 {
+    color: transparent;
+    position: relative;
+    font-size: 4.5rem;
+    font-family: var(--Patua);
+    letter-spacing: .3rem;
+    padding-bottom: .5rem;
+    animation: text-reveal .9s 1s forwards ease;
+}
+
+.header .hero h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.header .hero h1:nth-child(2) {
+    animation-delay: 2s;
+    white-space: nowrap;
+}
+
+.header .hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 40, .8);
+    animation: text-overlay 1s forwards ease;
+    animation-delay: .7s;
+}
+
+.header .hero h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+.header .hero h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+.header .hero p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header .hero a {
+    border-radius: 30px;
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+    font-family: var(--Rubik);
+    animation: btn-pulse;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* .header .hero a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 30px 6px navy;
+    border-radius: 30px;
+    animation: btn-pulse;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
+} */
+
+/*****     Header Style End     *****/
+
+/*****     Section-1 Style Start     *****/
+
+.section-1 {
+    padding: 5rem 0;
+}
+
+.section-1 .col-md-6 img {
+    opacity: .9;
+}
+
+.section-1 .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .panel {
+    position: absolute;
+    padding: 3rem 1rem;
+    top: 2.4rem;
+    left: -6.6rem;
+    right: 1.5rem;
+    background: #fff;
+    z-index: 1;
+}
+
+.section-1 .panel p {
+    font-size: .91rem;
+    font-family: var(--Patua);
+    color: rgba(0, 0, 0, .6);
+    line-height: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+
+/*****     Section-1 Style End     *****/
+
+/*****     Section-2 Style Start     *****/
+
+.section-2 {
+    position: relative;
+    width: 100%;
+    padding: 5rem 0;
+    font-family: var(--Acme);
+    z-index: 2;
+    /*background: linear-gradient(to bottom, #dd2476, #ff512f);*/
+}
+
+.section-2 .card {
+    padding: .5rem .9rem;
+    margin: .5rem 0;
+    z-index: 2;
+    animation-duration: 3s;
+    animation-delay: .5s;
+
+}
+
+.section-2 .group {
+    animation-duration: 3s;
+    animation-delay: .5s;
+}
+
+.section-2 .card h1 {
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-family: var(--Lobster);
+}
+
+.section-2 .card p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.section-2 .card img {
+    width: 70%;
+    /*height: 120px;*/
+    margin: 1rem 0;
+    box-shadow: 0 0 3rem rgba(255, 255, 255, 0.3);
+    animation-duration: 2s;
+    animation-delay: 2.6s;
+}
+
+.section-2 .card button {
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: .4rem 3.5rem;
+    margin: .4rem;
+    z-index: 20;
+}
+
+/*****     Section-2 Style End     *****/
+
+/*****     Section-3 Style Start     *****/
+.section-3 {
+    padding: 5rem 3rem;
+}
+
+.section-3 .card {
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin-top: 1.6rem;
+}
+
+.section-3 .col-lg-3:hover .card {
+    transform: rotateY(180deg);
+}
+
+.section-3 .card .overlay {
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.section-3 .card .content {
+    position: relative;
+    top: 90%;
+    transform: translateY(-90%);
+    color: rgba(255, 255, 255, .7);
+    font-family: var(--Patua);
+    transition: all .4s ease-in-out;
+}
+
+.section-3 .card:hover .overlay {
+    opacity: 1;
+}
+
+.section-3 .card .content h1 {
+    font-family: var(--Lobster);
+    font-size: 2.1rem;
+    letter-spacing: .1rem;
+    padding-bottom: .1rem;
+}
+
+.section-3 .card .content i {
+    font-size: 1.1rem;
+    padding-right: 5px;
+}
+
+.section-3 .col-lg-3 img {
+    width: 100%;
+    height: 290px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+/*****     Section-3 Style End     *****/
+
+/*****     Footer Style Start     *****/
+
+.footer {
+    width: 100%;
+    background: rgba(0, 0, 40, .9);
+    color: white;
+    font-family: var(--Patua);
+    padding: 2.6rem 1rem .01rem 1rem;
+}
+
+.footer .row>div {
+    padding-right: 1.5rem;
+}
+
+.footer h1 {
+    font-size: 1.6rem;
+}
+
+.footer p {
+    font-family: var(--Acme);
+    font-size: .9rem;
+    letter-spacing: .05rem;
+}
+
+.footer .instagram .group {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .instagram img {
+    width: 90px;
+    height: 80px;
+    padding: .3rem .4rem;
+}
+
+.footer .newsletter {
+    padding-left: 2rem;
+}
+
+.footer .newsletter .input-group span {
+    background: skyblue;
+}
+
+.footer .follow i {
+    color: skyblue;
+    padding-left: .4rem;
+}
+
+.footer .rights {
+    font-size: 1rem;
+    margin-top: 1.7rem;
+}
+
+.footer .rights a {
+    color: white;
+    letter-spacing: .1rem;
+    white-space: nowrap;
+}
+
+a span {
+    color: crimson;
+}
+
+/*****     Footer Style End     *****/
+
+/*****     Keyfram Style Start     *****/
+
+@keyframes text-overlay {
+    50% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes text-reveal {
+    50% {
+        text-shadow: 0px 0px 26px skyblue;
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0px 0px 20px navy;
+    }
+}
+
+@keyframes btn-pulse {
+    0% {
+        box-shadow: 0 0 1px 0 navy;
+    }
+
+    50% {
+        box-shadow: 0 0 30px 7px navy;
+
+    }
+
+    100% {
+        box-shadow: 0 0 1px 0 navy;
+    }
+}
+
+/*****     Keyfram Style End     *****/
+
+/*****     Media Query Style Start   *****/
+@media only screen and (min-width: 1200px) {
+    .section-1 .panel {
+        top: 3.5rem;
+        left: -10rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header .navbar .navbar-nav {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        position: relative;
+    }
+
+    .header .navbar .navbar-nav .nav-item a::after {
+        content: attr(data-after);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: rgba(4, 4, 68, 0.15);
+        font-size: 3rem;
+        letter-spacing: 5rem;
+        white-space: nowrap;
+        z-index: -1;
+        transition: letter-spacing .4s ease;
+    }
+
+    .header .navbar .navbar-nav a:hover::after {
+        transform: translate(-50%, -50%) scale(1.1);
+        letter-spacing: 1px;
+    }
+
+    .section-1 .row .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .section-1 .panel {
+        padding: .5rem 1rem;
+        top: 1.5rem;
+        left: -3rem;
+        right: 0;
+    }
+
+    .section-1 .panel,
+    .section-1 .col-md-6 img {
+        width: 24rem;
+    }
+
+    .footer .newsletter {
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .footer .follow {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header .navbar-brand {
+        margin-left: 1rem;
+    }
+
+    .header .hero h1 {
+        font-size: 4rem;
+    }
+
+    .header .hero h1 span {
+        white-space: nowrap;
+    }
+
+    .section-1 .panel,
+    .section-1 .col-md-6 img {
+        width: 24rem;
+        position: initial;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .section-2 .row {
+        justify-content: center;
+    }
+
+    .section-2 .row .col-sm-12 {
+        max-width: 450px;
+        padding: 0 2rem;
+    }
+
+    .footer .newsletter .input-group {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .header .hero h1 {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+
+    .header .hero a {
+        white-space: nowrap;
+    }
+
+    .section-1 .panel,
+    .section-1 .col-md-6 img {
+        width: 18rem;
+    }
+
+    .footer .newsletter .input-group {
+        width: initial;
+    }
+}
+
+/*****     Media Query Style End   *****/
