@@ -55,6 +55,7 @@ html {
     color: navy;
     margin-left: 7rem;
     font-family: var(--Patua);
+    padding:12px 0;
 }
 
 .header .navbar .navbar-nav {
@@ -100,7 +101,7 @@ html {
 .header .hero h1 {
     color: transparent;
     position: relative;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: var(--Patua);
     letter-spacing: .3rem;
     padding-bottom: .5rem;
