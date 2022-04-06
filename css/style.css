@@ -424,14 +424,17 @@ a span {
 /*****     Keyfram Style End     *****/
 
 /*****     Media Query Style Start   *****/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200.2px) {
     .section-1 .panel {
         top: 3.5rem;
         left: -10rem;
     }
+    .header .hero h1 {
+        font-size:4.5rem;
+    }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991.5px) {
     .header .navbar .navbar-nav {
         padding: 0;
         display: flex;
@@ -439,6 +442,9 @@ a span {
         align-items: center;
         font-size: 1.1rem;
         position: relative;
+    }
+    .header .hero h1 {
+        font-size:3rem;
     }
 
     .header .navbar .navbar-nav .nav-item a::after {
@@ -496,7 +502,8 @@ a span {
     }
 
     .header .hero h1 {
-        font-size: 4rem;
+        font-size: 2rem;
+        white-space: nowrap;
     }
 
     .header .hero h1 span {
@@ -527,7 +534,7 @@ a span {
 
 @media only screen and (max-width: 430px) {
     .header .hero h1 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         letter-spacing: .2rem;
     }
 
