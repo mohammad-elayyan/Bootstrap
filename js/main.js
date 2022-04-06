@@ -18,7 +18,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-var navlink = document.querySelectorAll(".nav-link");
+var navlink = document.querySelectorAll(".nav-item");
 
 var activeA = function () {
   for (i = 0; i < navlink.length; i++) {
