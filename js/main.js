@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    $('html').niceScroll({
-        cursorcolor: 'navy',
-        cursorwidth: '10',
-        cursorborder: '1px solid navy',
-        zindex: '1000'
-    });
 
     $('.venobox').venobox();
 });
@@ -23,3 +17,42 @@ document.addEventListener('scroll', () => {
         navbar.style.backgroundColor = 'initial';
     }
 });
+
+var navlink = document.querySelectorAll(".nav-link");
+
+var activeA = function () {
+  for (i = 0; i < navlink.length; i++) {
+    if (i == 0) {
+      navlink[i].classList.add("active");
+    } else {
+      navlink[i].classList.remove("active");
+    }
+  }
+};
+var activeB = function () {
+  for (i = 0; i < navlink.length; i++) {
+    if (i == 1) {
+      navlink[i].classList.add("active");
+    } else {
+      navlink[i].classList.remove("active");
+    }
+  }
+};
+var activeC = function () {
+  for (i = 0; i < navlink.length; i++) {
+    if (i == 2) {
+      navlink[i].classList.add("active");
+    } else {
+      navlink[i].classList.remove("active");
+    }
+  }
+};
+var activeD = function () {
+  for (i = 0; i < navlink.length; i++) {
+    if (i == 3) {
+      navlink[i].classList.add("active");
+    } else {
+      navlink[i].classList.remove("active");
+    }
+  }
+};
